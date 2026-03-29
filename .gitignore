@@ -1,0 +1,12 @@
+# Xcode build output
+Builds/
+
+# Xcode user settings
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+
+# JetBrains
+.idea/
