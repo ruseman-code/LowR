@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="LPF001" name="LowPassFilter" projectType="audioplug"
-              bundleIdentifier="com.jamesdev.LowPassFilter"
-              companyName="JamesDev" companyCopyright="JamesDev"
-              pluginName="LowPassFilter" pluginDesc="A simple low-pass filter plugin"
-              pluginManufacturer="JamesDev" pluginManufacturerCode="Jdev"
-              pluginCode="LPF1" pluginChannelConfigs="{1, 1}, {2, 2}"
-              pluginFormats="buildAU,buildStandalone"
-              isPluginSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
-              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
-              pluginAUExportPrefix="LowPassFilterAU"
-              pluginRTASCategory="" aaxIdentifier="com.jamesdev.LowPassFilter"
-              useAppConfig="0" addUsingNamespaceToJuceHeader="0"
+<JUCERPROJECT id="LPF001" name="LowPassFilter" projectType="audioplug" bundleIdentifier="com.jamesdev.LowPassFilter"
+              companyName="JamesDev" companyCopyright="JamesDev" pluginName="LowPassFilter"
+              pluginDesc="A simple low-pass filter plugin" pluginManufacturer="JamesDev"
+              pluginManufacturerCode="Jdev" pluginCode="LPF1" pluginChannelConfigs="{1, 1}, {2, 2}"
+              pluginFormats="buildAU,buildStandalone" isPluginSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="LowPassFilterAU" pluginRTASCategory=""
+              aaxIdentifier="com.jamesdev.LowPassFilter" useAppConfig="0" addUsingNamespaceToJuceHeader="0"
               jucerFormatVersion="1">
   <MAINGROUP id="LPFgrp" name="LowPassFilter">
     <GROUP id="SrcGrp" name="Source">
-      <FILE id="PPh" name="PluginProcessor.h" compile="0" resource="0"
-            file="Source/PluginProcessor.h"/>
+      <FILE id="PPh" name="PluginProcessor.h" compile="0" resource="0" file="Source/PluginProcessor.h"/>
       <FILE id="PPcpp" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
-      <FILE id="PEh" name="PluginEditor.h" compile="0" resource="0"
-            file="Source/PluginEditor.h"/>
-      <FILE id="PEcpp" name="PluginEditor.cpp" compile="1" resource="0"
-            file="Source/PluginEditor.cpp"/>
+      <FILE id="PEh" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="PEcpp" name="PluginEditor.cpp" compile="1" resource="0" file="Source/PluginEditor.cpp"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
@@ -44,6 +37,7 @@
         <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
         <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
         <MODULEPATH id="juce_dsp" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
   </EXPORTFORMATS>
@@ -52,6 +46,8 @@
     <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
     <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
