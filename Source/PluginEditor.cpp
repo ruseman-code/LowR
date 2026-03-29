@@ -13,7 +13,7 @@ LowPassFilterAudioProcessorEditor::LowPassFilterAudioProcessorEditor (LowPassFil
 
     // Label above the knob
     cutoffLabel.setText ("Cutoff", juce::dontSendNotification);
-    cutoffLabel.setFont (juce::Font (15.0f, juce::Font::bold));
+    cutoffLabel.setFont (juce::FontOptions().withHeight (15.0f).withStyle ("Bold"));
     cutoffLabel.setJustificationType (juce::Justification::centred);
     cutoffLabel.setColour (juce::Label::textColourId, juce::Colours::lightblue);
     addAndMakeVisible (cutoffLabel);
@@ -35,7 +35,7 @@ void LowPassFilterAudioProcessorEditor::paint (juce::Graphics& g)
 
     // Title text
     g.setColour (juce::Colours::white);
-    g.setFont (juce::Font (18.0f, juce::Font::bold));
+    g.setFont (juce::FontOptions().withHeight (18.0f).withStyle ("Bold"));
     g.drawFittedText ("Low Pass Filter",
                       getLocalBounds().removeFromTop (36),
                       juce::Justification::centred, 1);
